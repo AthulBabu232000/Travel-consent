@@ -25,7 +25,7 @@ const occupation=[
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('user/index', { title: 'Express' });
+  res.render('user/index', { title: 'Express',admin:false });
 });
 
 
