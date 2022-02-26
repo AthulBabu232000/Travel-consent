@@ -17,6 +17,9 @@ router.get('/', function(req, res, next) {
 router.get('/show-user', function(req, res, next) {
   res.render('admin/show-user', {title: 'Express', admin:true, consentUsers:consentUsers});
 });
+router.get('/user-consent-details', function(req, res, next) {
+  res.render('admin/user-consent-details', {title: 'Express', admin:true, consentUsers:consentUsers});
+});
 
 
 module.exports = router;
