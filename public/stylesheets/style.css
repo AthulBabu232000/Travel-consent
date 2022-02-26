@@ -1,0 +1,22 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  position:relative;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  overflow-x:hidden;
+}
+
+a {
+  color: #00B7FF;
+}
+.travel-consent{
+  padding-top:20px;
+}
+
+.section-seperator{
+  height:50px;
+  width:100vw;
+}

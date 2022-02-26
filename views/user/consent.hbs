@@ -1,0 +1,72 @@
+<section class="travel-consent">
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <h3 class="mx-auto text-uppercase font-weight-bolder">Consent To Travel</h3>
+        </div>
+        <hr>
+        <section class="section-seperator">
+
+        </section>
+        <div class="row">
+            <div class="col-md-7 mx-auto">
+
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="name" id="name" name="name" class="form-control name" value={{name}}
+                            placeholder="Enter name">
+                    </div>
+
+
+                    <div class="form-group row">
+                        <div class="col-md-6 mx-auto">
+                            <label for="time-stamp">Time of Travel</label>
+                            <select class="form-control time-stamp" name="time-stamp" id="time-stamp">
+                                <option>6 - 10</option>
+                                <option>10 - 14</option>
+                                <option>16 - 20</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mx-auto">
+
+                         
+                                <label for="dot">Date of Travel</label>
+                                <input type="date" id="dot" dot="dot" class="form-control dot"
+                                    placeholder="Enter dot">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-md-6">
+                            <label for="travel-from">Travel From</label>
+                            <input type="text" name="travel-from" id="travel-from" class="form-control travel-from" />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="travel-to">Travel to</label>
+                            <input type="text" name="travel-to" id="travel-to" class="form-control travel-to" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="purpose-of-travel">Purpose of Travel</label>
+                        <textarea class="form-control purpose-of-travel" id="purpose-of-travel" rows="3"></textarea>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input self-declaration" id="self-declaration">
+                        <small class=" text-muted form-text" for="self-declaration">
+                            I, {{name}} hereby declare that the information given above and in the
+                            enclosed documents is true to the best of my knowledge and belief and
+                            nothing has been concealed therein. I am well aware of the fact that if the
+                            information given by me is proved false/not true, I will have to face the
+                            punishment as per the law. Also, all the benefits availed by me shall be
+                            summarily withdrawn.
+                            </>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

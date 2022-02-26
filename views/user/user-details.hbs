@@ -1,0 +1,136 @@
+<section class="user-details">
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <h2 class="mx-auto">Enter details</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <form action="">
+
+                    <div class="row">
+                        <h4 class="mx-auto my-auto">Primary Details</h4>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Full Name</label>
+                        <input type="name" id="name" name="name" class="form-control name" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" name="email" id="email" class="form-control email"
+                            placeholder="Enter email">
+
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-md-6 mx-auto">
+                            <label for="number">Mobile Number</label>
+                            <input type="tel" name="number" id="number" class="form-control number"
+                                placeholder="Enter mobile number">
+                            <small class="text-muted form-text">
+                                Enter mobile number registered with vehicle
+
+                            </small>
+                        </div>
+                        <div class="col-md-6 mx-auto">
+                            <label for="number">DOB</label>
+                            <input type="date" name="dob" id="dob" class="form-control dob"
+                                placeholder="Enter date of birth">
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="aadhar">Aadhar Number</label>
+                        <input type="text" name="aadhar" id="aadhar" class="form-control aadhar"
+                            placeholder="Enter Aadhar number">
+
+                    </div>
+
+                    <div class="row">
+                        <h4 class="mx-auto my-auto">Residential Details</h4>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" class="form-control address"
+                            placeholder="Enter address">
+                        <small class="form-text text-muted">Permanant residential address</small>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-md-4 mx-auto">
+
+                            <label for="state">State</label>
+                            <input type="text" id="state" name="state" class="form-control state"
+                                placeholder="Enter State" value="Kerala" disabled>
+
+                        </div>
+                        <div class="col-md-4 mx-auto">
+
+                            <label for="district">District</label>
+                            <select class="form-control district" id="district">
+
+                                {{#each districts}}
+                                <option>{{this}}</option>
+
+                                {{/each}}
+
+                            </select>
+                        </div>
+                        <div class="col-md-4 mx-auto">
+
+                            <label for="pincode">Pincode</label>
+                            <input type="text" id="pincode" name="pincode" class="form-control pincode"
+                                placeholder="Enter pincode">
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <h4 class="mx-auto my-auto">Occupational Details</h4>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4 mx-auto">
+                            <label for="personal-profile">Photo</label>
+                            <input type="file" id="photo" name="photo" class="form-control   photo"
+                                placeholder="Enter photo">
+                        </div>
+                        <div class="col-md-8 mx-auto">
+                            <label for="district">District</label>
+                            <select class="form-control district" id="district">
+
+                                {{#each occupation}}
+
+                                <option>{{this}}</option>
+                                {{/each}}
+
+
+
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <h4 class="mx-auto my-auto">Vehicle Details</h4>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Vehicle Licence No</label>
+                        <input type="text" id="license" name="license" class="form-control license"
+                            placeholder="Enter license no">
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                        <button class="btn ml-auto btn-outline-warning">Search</button>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
